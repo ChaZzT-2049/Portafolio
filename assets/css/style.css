@@ -404,7 +404,7 @@ section.formcontacto{
 }
 .formcontacto__input:not(:placeholder-shown) + .formcontacto__input__label, .formcontacto__textarea:not(:placeholder-shown) + .formcontacto__textarea__label{
     font-size: .7rem;
-    padding: .2rem .5rem;
+    padding: .2rem 0 .2rem .5rem;
 }
 .formcontacto__input:focus-visible + .formcontacto__input__label, .formcontacto__textarea:focus-visible + .formcontacto__textarea__label{
     color: var(--cor-azul-btn);
@@ -990,8 +990,9 @@ section.footer{
     .formcontacto__field{
         margin-bottom: 1rem;
     }
-    .formcontacto__input, .formcontacto__input__label{
-        width: 97%;
+    .formcontacto__input__label, .formcontacto__textarea__label{
+        width: 98%;
+        border-radius: 5px 5px 0 0;
     }
     .formcontacto__boton{
         align-self: flex-start;
@@ -999,5 +1000,23 @@ section.footer{
     /*Footer*/
     section.footer{
         margin: 1rem .5rem;
+    }
+    .modal{
+        width: 95%;
+        height: auto;
+        max-height: 90%;
+    }
+    .modal::-webkit-scrollbar{
+        width: .3rem;
+    }
+    .skill__top__title{
+        font-size: 1.5rem;
+    }
+    .skill__info__img{
+        width: 80%;
+        margin: 0 10%;
+    }
+    .skill__info__icon{
+        width: 20%;
     }
 }
