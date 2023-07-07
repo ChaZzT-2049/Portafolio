@@ -89,7 +89,7 @@
         <section class="skills" id="skills">
             <h3 class="skills__title">Skills</h3>
             <div class="skills__container">
-                <div class="skill__box">
+                <div class="skill__box" onclick="showModal(id = `skill-html`)" id="skill-html">
                     <ul>
                         <li class="skill__img">
                             <img class="skill__img__cover" src="assets/images/html5.jpg" alt="Html">
@@ -101,7 +101,7 @@
                     </ul>
                 </div>
 
-                <div class="skill__box">
+                <div class="skill__box" onclick="showModal(id = `skill-css`)" id="skill-css">
                     <ul>
                         <li class="skill__img">
                             <img class="skill__img__cover" src="assets/images/css.jpg" alt="">
@@ -113,7 +113,7 @@
                     </ul>
                 </div>
 
-                <div class="skill__box">
+                <div class="skill__box" onclick="showModal(id = `skill-js`)" id="skill-js">
                     <ul>
                         <li class="skill__img">
                             <img class="skill__img__cover" src="assets/images/javascript.jpg" alt="">
@@ -125,7 +125,7 @@
                     </ul>
                 </div>
 
-                <div class="skill__box">
+                <div class="skill__box" onclick="showModal(id = `skill-laravel`)" id="skill-laravel">
                     <ul>
                         <li class="skill__img">
                             <img class="skill__img__cover" src="assets/images/laravel.PNG" alt="">
@@ -137,7 +137,7 @@
                     </ul>
                 </div>
 
-                <div class="skill__box">
+                <div class="skill__box" onclick="showModal(id = `skill-vue`)" id="skill-vue">
                     <ul>
                         <li class="skill__img">
                             <img class="skill__img__cover" src="assets/images/vue.jpg" alt="">
@@ -149,7 +149,7 @@
                     </ul>
                 </div>
 
-                <div class="skill__box">
+                <div class="skill__box" onclick="showModal(id = `skill-react`)" id="skill-react">
                     <ul>
                         <li class="skill__img">
                             <img class="skill__img__cover" src="assets/images/react.jpg" alt="">
@@ -161,7 +161,7 @@
                     </ul>
                 </div>
 
-                <div class="skill__box">
+                <div class="skill__box" onclick="showModal(id = `skill-pwa`)" id="skill-pwa">
                     <ul>
                         <li class="skill__img">
                             <img class="skill__img__cover" src="assets/images/pwa.jpg" alt="">
@@ -173,7 +173,7 @@
                     </ul>
                 </div>
 
-                <div class="skill__box">
+                <div class="skill__box" onclick="showModal(id = `skill-git`)" id="skill-git">
                     <ul>
                         <li class="skill__img">
                             <img class="skill__img__cover" src="assets/images/control.jpg" alt="">
@@ -185,7 +185,7 @@
                     </ul>
                 </div>
 
-                <div class="skill__box">
+                <div class="skill__box" onclick="showModal(id = `skill-en`)" id="skill-en">
                     <ul>
                         <li class="skill__img">
                             <img class="skill__img__cover" src="assets/images/ingles.jpg" alt="">
@@ -548,5 +548,274 @@
             </footer>
         </section>
     </main>
+    <div class="modal__background" id="modal">
+        <div class="modal" id="skill__modal">
+            <div class="modal__skill" id="skill-html">
+                <div class="skill__top">
+                    <span onclick="closeModal()" class="modal__close">&times;</span>
+                    <h1 class="skill__top__title">HTML 5</h1>
+                    <h3 class="skill__top__type">Web</h3>
+                </div>
+                <div class="skill__info">
+                    <img class="skill__info__img" src="assets/images/html5.jpg" alt="html">
+                    <h2 class="skill__info__titles">¿Qué es HTML?</h2>
+                    <p class="skill__info__descripcion">
+                        HTML (HyperText Markup Language) es el lenguaje de marcado estándar utilizado para crear la estructura y el contenido de las páginas web. Es el lenguaje base de la World Wide Web y se utiliza para definir la estructura y el significado de los elementos de una página web, como encabezados, párrafos, enlaces, imágenes, formularios, tablas, etc.
+                    </p>
+                    <h2 class="skill__info__titles--center">Usos</h2>
+                    <p class="skill__info__descripcion">
+                        En resumen, HTML es el lenguaje fundamental para crear páginas web, proporcionando la estructura y el contenido básico de una página que puede ser aplicado en:
+                    </p>
+                    <ul class="skill__usos__list">
+                        <li class="usos__list__item">Creación de sitios web.</li>
+                        <li class="usos__list__item">Desarrollo de aplicaciones web.</li>
+                        <li class="usos__list__item">Construcción de formularios en línea.</li>
+                        <li class="usos__list__item">Publicación de contenido en línea.</li>
+                    </ul>
+                    <img class="skill__info__icon" src="assets/icons/htlm.png" alt="html">
+                    <h2 class="skill__info__titles">Desarrollada en</h2>
+                    <p class="skill__info__descripcion">
+                        HTML lo aprendi a fondo en la formacion de Oracle One de Alura Latam, en sus cursos de html.
+                    </p>
+                </div>
+            </div>
+            <div class="modal__skill" id="skill-css">
+                <div class="skill__top">
+                    <span onclick="closeModal()" class="modal__close">&times;</span>
+                    <h1 class="skill__top__title">CSS</h1>
+                    <h3 class="skill__top__type">Diseño</h3>
+                </div>
+                <div class="skill__info">
+                    <img class="skill__info__img" src="assets/images/css.jpg" alt="html">
+                    <h2 class="skill__info__titles">¿Qué es CSS?</h2>
+                    <p class="skill__info__descripcion">
+                        CSS (HyperText Markup Language) es el lenguaje de marcado estándar utilizado para crear la estructura y el contenido de las páginas web. Es el lenguaje base de la World Wide Web y se utiliza para definir la estructura y el significado de los elementos de una página web, como encabezados, párrafos, enlaces, imágenes, formularios, tablas, etc.
+                    </p>
+                    <h2 class="skill__info__titles--center">Usos</h2>
+                    <p class="skill__info__descripcion">
+                        En resumen, CSS es el lenguaje fundamental para crear páginas web, proporcionando la estructura y el contenido básico de una página que puede ser aplicado en:
+                    </p>
+                    <ul class="skill__usos__list">
+                        <li class="usos__list__item">Creación de sitios web.</li>
+                        <li class="usos__list__item">Desarrollo de aplicaciones web.</li>
+                        <li class="usos__list__item">Construcción de formularios en línea.</li>
+                        <li class="usos__list__item">Publicación de contenido en línea.</li>
+                    </ul>
+                    <img class="skill__info__icon" src="assets/icons/css_icon.png" alt="CSS">
+                    <h2 class="skill__info__titles">Desarrollada en</h2>
+                    <p class="skill__info__descripcion">
+                        CSS lo aprendi a fondo en la formacion de Oracle One de Alura Latam, en sus cursos de CSS.
+                    </p>
+                </div>
+            </div>
+            <div class="modal__skill" id="skill-js">
+                <div class="skill__top">
+                    <span onclick="closeModal()" class="modal__close">&times;</span>
+                    <h1 class="skill__top__title">JavaScript</h1>
+                    <h3 class="skill__top__type">Programación</h3>
+                </div>
+                <div class="skill__info">
+                    <img class="skill__info__img" src="assets/images/javascript.jpg" alt="JavaScript">
+                    <h2 class="skill__info__titles">¿Qué es JavaScript?</h2>
+                    <p class="skill__info__descripcion">
+                        JavaScript (HyperText Markup Language) es el lenguaje de marcado estándar utilizado para crear la estructura y el contenido de las páginas web. Es el lenguaje base de la World Wide Web y se utiliza para definir la estructura y el significado de los elementos de una página web, como encabezados, párrafos, enlaces, imágenes, formularios, tablas, etc.
+                    </p>
+                    <h2 class="skill__info__titles--center">Usos</h2>
+                    <p class="skill__info__descripcion">
+                        En resumen, JavaScript es el lenguaje fundamental para crear páginas web, proporcionando la estructura y el contenido básico de una página que puede ser aplicado en:
+                    </p>
+                    <ul class="skill__usos__list">
+                        <li class="usos__list__item">Creación de sitios web.</li>
+                        <li class="usos__list__item">Desarrollo de aplicaciones web.</li>
+                        <li class="usos__list__item">Construcción de formularios en línea.</li>
+                        <li class="usos__list__item">Publicación de contenido en línea.</li>
+                    </ul>
+                    <img class="skill__info__icon" src="assets/icons/js_icon.png" alt="JavaScript">
+                    <h2 class="skill__info__titles">Desarrollada en</h2>
+                    <p class="skill__info__descripcion">
+                        JavaScript lo aprendi a fondo en la formacion de Oracle One de Alura Latam, en sus cursos de JavaScript.
+                    </p>
+                </div>
+            </div>
+            <div class="modal__skill" id="skill-laravel">
+                <div class="skill__top">
+                    <span onclick="closeModal()" class="modal__close">&times;</span>
+                    <h1 class="skill__top__title">JavaScript</h1>
+                    <h3 class="skill__top__type">Programación</h3>
+                </div>
+                <div class="skill__info">
+                    <img class="skill__info__img" src="assets/images/laravel.PNG" alt="JavaScript">
+                    <h2 class="skill__info__titles">¿Qué es JavaScript?</h2>
+                    <p class="skill__info__descripcion">
+                        JavaScript (HyperText Markup Language) es el lenguaje de marcado estándar utilizado para crear la estructura y el contenido de las páginas web. Es el lenguaje base de la World Wide Web y se utiliza para definir la estructura y el significado de los elementos de una página web, como encabezados, párrafos, enlaces, imágenes, formularios, tablas, etc.
+                    </p>
+                    <h2 class="skill__info__titles--center">Usos</h2>
+                    <p class="skill__info__descripcion">
+                        En resumen, JavaScript es el lenguaje fundamental para crear páginas web, proporcionando la estructura y el contenido básico de una página que puede ser aplicado en:
+                    </p>
+                    <ul class="skill__usos__list">
+                        <li class="usos__list__item">Creación de sitios web.</li>
+                        <li class="usos__list__item">Desarrollo de aplicaciones web.</li>
+                        <li class="usos__list__item">Construcción de formularios en línea.</li>
+                        <li class="usos__list__item">Publicación de contenido en línea.</li>
+                    </ul>
+                    <img class="skill__info__icon" src="assets/icons/php_icon.png" alt="JavaScript">
+                    <h2 class="skill__info__titles">Desarrollada en</h2>
+                    <p class="skill__info__descripcion">
+                        JavaScript lo aprendi a fondo en la formacion de Oracle One de Alura Latam, en sus cursos de JavaScript.
+                    </p>
+                </div>
+            </div>
+            <div class="modal__skill" id="skill-vue">
+                <div class="skill__top">
+                    <span onclick="closeModal()" class="modal__close">&times;</span>
+                    <h1 class="skill__top__title">JavaScript</h1>
+                    <h3 class="skill__top__type">Programación</h3>
+                </div>
+                <div class="skill__info">
+                    <img class="skill__info__img" src="assets/images/vue.jpg" alt="JavaScript">
+                    <h2 class="skill__info__titles">¿Qué es JavaScript?</h2>
+                    <p class="skill__info__descripcion">
+                        JavaScript (HyperText Markup Language) es el lenguaje de marcado estándar utilizado para crear la estructura y el contenido de las páginas web. Es el lenguaje base de la World Wide Web y se utiliza para definir la estructura y el significado de los elementos de una página web, como encabezados, párrafos, enlaces, imágenes, formularios, tablas, etc.
+                    </p>
+                    <h2 class="skill__info__titles--center">Usos</h2>
+                    <p class="skill__info__descripcion">
+                        En resumen, JavaScript es el lenguaje fundamental para crear páginas web, proporcionando la estructura y el contenido básico de una página que puede ser aplicado en:
+                    </p>
+                    <ul class="skill__usos__list">
+                        <li class="usos__list__item">Creación de sitios web.</li>
+                        <li class="usos__list__item">Desarrollo de aplicaciones web.</li>
+                        <li class="usos__list__item">Construcción de formularios en línea.</li>
+                        <li class="usos__list__item">Publicación de contenido en línea.</li>
+                    </ul>
+                    <img class="skill__info__icon" src="assets/icons/vue.png" alt="JavaScript">
+                    <h2 class="skill__info__titles">Desarrollada en</h2>
+                    <p class="skill__info__descripcion">
+                        JavaScript lo aprendi a fondo en la formacion de Oracle One de Alura Latam, en sus cursos de JavaScript.
+                    </p>
+                </div>
+            </div>
+            <div class="modal__skill" id="skill-react">
+                <div class="skill__top">
+                    <span onclick="closeModal()" class="modal__close">&times;</span>
+                    <h1 class="skill__top__title">JavaScript</h1>
+                    <h3 class="skill__top__type">Programación</h3>
+                </div>
+                <div class="skill__info">
+                    <img class="skill__info__img" src="assets/images/react.jpg" alt="JavaScript">
+                    <h2 class="skill__info__titles">¿Qué es JavaScript?</h2>
+                    <p class="skill__info__descripcion">
+                        JavaScript (HyperText Markup Language) es el lenguaje de marcado estándar utilizado para crear la estructura y el contenido de las páginas web. Es el lenguaje base de la World Wide Web y se utiliza para definir la estructura y el significado de los elementos de una página web, como encabezados, párrafos, enlaces, imágenes, formularios, tablas, etc.
+                    </p>
+                    <h2 class="skill__info__titles--center">Usos</h2>
+                    <p class="skill__info__descripcion">
+                        En resumen, JavaScript es el lenguaje fundamental para crear páginas web, proporcionando la estructura y el contenido básico de una página que puede ser aplicado en:
+                    </p>
+                    <ul class="skill__usos__list">
+                        <li class="usos__list__item">Creación de sitios web.</li>
+                        <li class="usos__list__item">Desarrollo de aplicaciones web.</li>
+                        <li class="usos__list__item">Construcción de formularios en línea.</li>
+                        <li class="usos__list__item">Publicación de contenido en línea.</li>
+                    </ul>
+                    <img class="skill__info__icon" src="assets/icons/react_icon.png" alt="JavaScript">
+                    <h2 class="skill__info__titles">Desarrollada en</h2>
+                    <p class="skill__info__descripcion">
+                        JavaScript lo aprendi a fondo en la formacion de Oracle One de Alura Latam, en sus cursos de JavaScript.
+                    </p>
+                </div>
+            </div>
+            <div class="modal__skill" id="skill-pwa">
+                <div class="skill__top">
+                    <span onclick="closeModal()" class="modal__close">&times;</span>
+                    <h1 class="skill__top__title">JavaScript</h1>
+                    <h3 class="skill__top__type">Programación</h3>
+                </div>
+                <div class="skill__info">
+                    <img class="skill__info__img" src="assets/images/pwa.jpg" alt="JavaScript">
+                    <h2 class="skill__info__titles">¿Qué es JavaScript?</h2>
+                    <p class="skill__info__descripcion">
+                        JavaScript (HyperText Markup Language) es el lenguaje de marcado estándar utilizado para crear la estructura y el contenido de las páginas web. Es el lenguaje base de la World Wide Web y se utiliza para definir la estructura y el significado de los elementos de una página web, como encabezados, párrafos, enlaces, imágenes, formularios, tablas, etc.
+                    </p>
+                    <h2 class="skill__info__titles--center">Usos</h2>
+                    <p class="skill__info__descripcion">
+                        En resumen, JavaScript es el lenguaje fundamental para crear páginas web, proporcionando la estructura y el contenido básico de una página que puede ser aplicado en:
+                    </p>
+                    <ul class="skill__usos__list">
+                        <li class="usos__list__item">Creación de sitios web.</li>
+                        <li class="usos__list__item">Desarrollo de aplicaciones web.</li>
+                        <li class="usos__list__item">Construcción de formularios en línea.</li>
+                        <li class="usos__list__item">Publicación de contenido en línea.</li>
+                    </ul>
+                    <img class="skill__info__icon" src="assets/icons/pwa.png" alt="JavaScript">
+                    <h2 class="skill__info__titles">Desarrollada en</h2>
+                    <p class="skill__info__descripcion">
+                        JavaScript lo aprendi a fondo en la formacion de Oracle One de Alura Latam, en sus cursos de JavaScript.
+                    </p>
+                </div>
+            </div>
+            <div class="modal__skill" id="skill-git">
+                <div class="skill__top">
+                    <span onclick="closeModal()" class="modal__close">&times;</span>
+                    <h1 class="skill__top__title">JavaScript</h1>
+                    <h3 class="skill__top__type">Programación</h3>
+                </div>
+                <div class="skill__info">
+                    <img class="skill__info__img" src="assets/images/control.jpg" alt="JavaScript">
+                    <h2 class="skill__info__titles">¿Qué es JavaScript?</h2>
+                    <p class="skill__info__descripcion">
+                        JavaScript (HyperText Markup Language) es el lenguaje de marcado estándar utilizado para crear la estructura y el contenido de las páginas web. Es el lenguaje base de la World Wide Web y se utiliza para definir la estructura y el significado de los elementos de una página web, como encabezados, párrafos, enlaces, imágenes, formularios, tablas, etc.
+                    </p>
+                    <h2 class="skill__info__titles--center">Usos</h2>
+                    <p class="skill__info__descripcion">
+                        En resumen, JavaScript es el lenguaje fundamental para crear páginas web, proporcionando la estructura y el contenido básico de una página que puede ser aplicado en:
+                    </p>
+                    <ul class="skill__usos__list">
+                        <li class="usos__list__item">Creación de sitios web.</li>
+                        <li class="usos__list__item">Desarrollo de aplicaciones web.</li>
+                        <li class="usos__list__item">Construcción de formularios en línea.</li>
+                        <li class="usos__list__item">Publicación de contenido en línea.</li>
+                    </ul>
+                    <img class="skill__info__icon" src="assets/icons/github-blue.png" alt="JavaScript">
+                    <h2 class="skill__info__titles">Desarrollada en</h2>
+                    <p class="skill__info__descripcion">
+                        JavaScript lo aprendi a fondo en la formacion de Oracle One de Alura Latam, en sus cursos de JavaScript.
+                    </p>
+                </div>
+            </div>
+            <div class="modal__skill" id="skill-en">
+                <div class="skill__top">
+                    <span onclick="closeModal()" class="modal__close">&times;</span>
+                    <h1 class="skill__top__title">JavaScript</h1>
+                    <h3 class="skill__top__type">Programación</h3>
+                </div>
+                <div class="skill__info">
+                    <img class="skill__info__img" src="assets/images/ingles.jpg" alt="JavaScript">
+                    <h2 class="skill__info__titles">¿Qué es JavaScript?</h2>
+                    <p class="skill__info__descripcion">
+                        JavaScript (HyperText Markup Language) es el lenguaje de marcado estándar utilizado para crear la estructura y el contenido de las páginas web. Es el lenguaje base de la World Wide Web y se utiliza para definir la estructura y el significado de los elementos de una página web, como encabezados, párrafos, enlaces, imágenes, formularios, tablas, etc.
+                    </p>
+                    <h2 class="skill__info__titles--center">Usos</h2>
+                    <p class="skill__info__descripcion">
+                        En resumen, JavaScript es el lenguaje fundamental para crear páginas web, proporcionando la estructura y el contenido básico de una página que puede ser aplicado en:
+                    </p>
+                    <ul class="skill__usos__list">
+                        <li class="usos__list__item">Creación de sitios web.</li>
+                        <li class="usos__list__item">Desarrollo de aplicaciones web.</li>
+                        <li class="usos__list__item">Construcción de formularios en línea.</li>
+                        <li class="usos__list__item">Publicación de contenido en línea.</li>
+                    </ul>
+                    <img class="skill__info__icon" src="assets/icons/ingles.png" alt="JavaScript">
+                    <h2 class="skill__info__titles">Desarrollada en</h2>
+                    <p class="skill__info__descripcion">
+                        JavaScript lo aprendi a fondo en la formacion de Oracle One de Alura Latam, en sus cursos de JavaScript.
+                    </p>
+                </div>
+            </div>
+            <div class="modal__bottom">
+                <button onclick="closeModal()" class="modal__close__btn">Lo tengo</button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
+<script src="assets/js/modals.js"></script>
