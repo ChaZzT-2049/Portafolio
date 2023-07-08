@@ -508,7 +508,7 @@ section.footer{
 .modal__skill{
     display: none;
 }
-.skill__top{
+.modal__top{
     position: sticky;
     top: 0;
     padding-top: 1rem;
@@ -516,10 +516,10 @@ section.footer{
     background: #FDFDFD;
     border-bottom: 3px solid var(--cor-gris-fondo);
 }
-.skill__top__title{
+.modal__top__title{
     margin: 0 0 0 1rem;
 }
-.skill__top__type{
+.modal__top__type{
     margin: 0 0 1rem 1rem;
 }
 .skill__info{
@@ -1009,7 +1009,7 @@ section.footer{
     .modal::-webkit-scrollbar{
         width: .3rem;
     }
-    .skill__top__title{
+    .modal__top__title{
         font-size: 1.5rem;
     }
     .skill__info__img{
@@ -1017,6 +1017,6 @@ section.footer{
         margin: 0 10%;
     }
     .skill__info__icon{
-        width: 20%;
+        width: 10%;
     }
 }
