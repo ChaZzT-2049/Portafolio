@@ -47,7 +47,6 @@ section.menu{
     font-weight: bold;
 }
 /*Sección Title*/
-
 section.title{
     padding: 2rem;
     margin: 0 5rem;
@@ -95,7 +94,6 @@ section.title{
     width: 2rem;
 }
 /*Sección About*/
-
 section.about{
     background: var(--cor-azul-fondo);
     padding: 3rem 7rem;
@@ -167,7 +165,6 @@ section.skills{
     height: 1.5rem;
 }
 /*Sección Hobbies*/
-
 section.hobbies{
     margin: 0 7rem;
 }
@@ -199,9 +196,7 @@ section.hobbies{
     font-weight: bold;
     margin-top: 1rem;
 }
-
 /* Experiencia Académica*/
-
 section.academic{
     background: var(--cor-azul-fondo);
     padding: 3rem 7rem;
@@ -244,7 +239,6 @@ section.academic{
     font-weight: 600;
 }
 /* experiencia*/
-
 section.experience{
     margin: 0 7rem;
 }
@@ -318,7 +312,7 @@ section.experience{
     border: none;
     border-radius: 5px;
     margin-top: 1rem;
-    transition: all 500ms ease-in-out;
+    transition: all 400ms ease;
 }
 .experience__mas:hover{
     cursor: pointer;
@@ -338,7 +332,6 @@ section.experience{
     align-items: center;
 }
 /*Contacto*/
-
 section.formcontacto{
     background: var(--cor-azul-fondo);
     padding: 2rem 7rem;
@@ -351,7 +344,7 @@ section.formcontacto{
 }
 .formcontacto__img{
     width: 80%;
-    border: 20px inset var(--cor-azul-btn);
+    border: 20px outset var(--cor-azul-btn);
     border-radius: 100%;
 }
 .formcontacto__text{
@@ -448,17 +441,18 @@ section.formcontacto{
     background: #5595E9;
 }
 /*footeer*/
-
 section.footer{
    margin: 2rem 7rem;
 }
 .footer__content{
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 .footer__enlace{
     text-decoration: underline;
 }
-
 /*modal skill*/
 .modal__background{
     display: none;
@@ -488,7 +482,7 @@ section.footer{
 }
 .modal::-webkit-scrollbar-track {
     background: #FDFDFD;
-    border-radius: .5rem
+    border-radius: .5rem;
 }
 .modal::-webkit-scrollbar-thumb {
     background: #888;
@@ -584,6 +578,22 @@ section.footer{
     background: var(--cor-azul-btn-outline);
     color: var(--cor-azul-btn);
     cursor: pointer;
+}
+.modal__colums{
+    margin-top: .5rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+.modal__colum{
+    flex-basis: 50%;
+}
+.modal__colum__title{
+    text-align: center;
+}
+.modal__colum__content{
+    text-align: justify;
+    padding: .5rem;
+    padding-bottom: 0;
 }
 /*Desktop small*/
 @media screen and (min-width: 664px) and (max-width: 900px) {
@@ -705,7 +715,6 @@ section.footer{
         margin: 1rem 3rem;
     }
 }
-
 /*Tablet*/
 @media screen and (min-width: 495px) and (max-width: 663px) {
 
@@ -1002,6 +1011,9 @@ section.footer{
     .formcontacto__field{
         margin-bottom: 1rem;
     }
+    .formcontacto__input, .formcontacto__textarea{
+        width: 98%;
+    }
     .formcontacto__input__label, .formcontacto__textarea__label{
         width: 97.2%;
         border-radius: 5px 5px 0 5px;
@@ -1012,6 +1024,10 @@ section.footer{
     /*Footer*/
     section.footer{
         margin: 1rem .5rem;
+    }
+    .footer__content .title__network{
+        flex-wrap: wrap;
+        justify-content: center;
     }
     .modal{
         width: 95%;
