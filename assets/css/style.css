@@ -552,6 +552,11 @@ section.footer{
 .modal__list__item{
     list-style: circle;
 }
+.list__section{
+    font-weight: bold;
+    text-decoration: underline;
+    margin: .5rem 0;
+}
 .skill__info__icon{
     width: 5%;
     margin-left: 1rem;
@@ -596,7 +601,7 @@ section.footer{
     padding-bottom: 0;
 }
 /*Desktop small*/
-@media screen and (min-width: 664px) and (max-width: 900px) {
+@media screen and (min-width: 664px) and (max-width: 1080px) {
 
     /* Menú */
     section.menu{
@@ -1015,7 +1020,7 @@ section.footer{
         width: 98%;
     }
     .formcontacto__input__label, .formcontacto__textarea__label{
-        width: 97.2%;
+        width: 97%;
         border-radius: 5px 5px 0 5px;
     }
     .formcontacto__boton{
@@ -1046,5 +1051,8 @@ section.footer{
     }
     .skill__info__icon{
         width: 10%;
+    }
+    .modal__colums{
+        flex-direction: column;
     }
 }
