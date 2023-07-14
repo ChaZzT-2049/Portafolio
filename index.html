@@ -518,22 +518,26 @@
                     </h3>
                     <form class="formcontacto__form" name="form">
                         <div class="formcontacto__field">
-                            <input id="nombre" class="formcontacto__input" type="text" name="nombre" placeholder="Nombre">
+                            <input id="nombre" class="formcontacto__input" type="text" name="nombre" placeholder="Nombre" required title="Maximo 50 Caracteres, sin simbolos especiales" pattern="^[a-zA-Z ]{1,50}$">
                             <label class="formcontacto__input__label" for="nombre">Nombre Completo</label>
+                            <span class="error hide"></span>
                         </div>
                         <div class="formcontacto__field">
-                            <input id="email"  class="formcontacto__input" type="email" name="email" placeholder="Correo">
+                            <input id="email"  class="formcontacto__input" type="email" name="email" placeholder="Correo" required>
                             <label class="formcontacto__input__label" for="email">Correo Electronico</label>
+                            <span class="error hide"></span>
                         </div>
                         <div class="formcontacto__field">
-                            <input id="asunto"  class="formcontacto__input" type="text" name="asunto" placeholder="Asunto">
+                            <input id="asunto"  class="formcontacto__input" type="text" name="asunto" placeholder="Asunto" required pattern="^.{1,50}$">
                             <label class="formcontacto__input__label" for="asunto">Asunto</label>
+                            <span class="error hide"></span>
                         </div>
                         <div class="formcontacto__field">
-                            <textarea class="formcontacto__textarea" id="mensagem" name="mensaje" placeholder="Mensaje"></textarea>
+                            <textarea class="formcontacto__textarea" id="mensagem" name="mensaje" placeholder="Mensaje" maxlength="300" minlength="1"></textarea>
                             <label class="formcontacto__textarea__label" for="mensagem">Mensaje</label>
+                            <span class="error hide"></span>
                         </div>
-                        <button type="submit" class="formcontacto__boton">Enviar mensaje</button>
+                        <button type="submit" data-button class="formcontacto__boton">Enviar mensaje</button>
                     </form>
                 </div>
             </div>
@@ -1043,3 +1047,4 @@
 </body>
 </html>
 <script src="assets/js/modals.js"></script>
+<script src="assets/js/script.js"></script>
