@@ -1,0 +1,47 @@
+/*Sección Title*/
+section.title{
+    padding: 2rem;
+    margin: 0 5rem;
+}
+.title__div{
+    display: flex;
+}
+.title__profile{
+    order: 1;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+}
+.title__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.title__bio{
+    font-size: 3rem;
+    margin: 1rem 0;
+    line-height: 1.2;
+}
+.title__subsection{
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+.title__network{
+    display: flex;
+}
+.title__network__item{
+    display: flex;
+    margin-right: 1rem;
+    align-items: center;
+}
+.title__network__enlace{
+    margin-left: 2px;
+    font-weight: bold;
+}
+.title__network__enlace:hover{
+    text-decoration: underline;
+}
+.title__network__icon{
+    width: 2rem;
+}

@@ -1,0 +1,30 @@
+section.menu{
+    background: var(--cor-gris-fondo);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+.menu__header{
+    display: flex;
+    align-items: center;
+}
+.menu__img{
+    width: 2rem;
+    border-radius: 100%;
+    margin-right: .5rem;
+}
+.menu__list{
+    display: flex;
+}
+.menu__list__item{
+    margin-right: 1rem;
+}
+.menu__list__item:hover a{
+    color: var(--cor-azul-btn);
+    text-decoration: underline;
+    font-weight: bold;
+}

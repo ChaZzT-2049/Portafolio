@@ -1,0 +1,128 @@
+/*Contacto*/
+section.formcontacto{
+    background: var(--cor-azul-fondo);
+    padding: 2rem 7rem;
+}
+.formcontacto__contacto{
+    display: flex;
+}
+.formcontacto--izquierda{
+    flex-basis: 50%;
+    align-self: flex-start;
+}
+.formcontacto__img{
+    width: 80%;
+    border: 20px outset var(--cor-azul-btn);
+    border-radius: 100%;
+}
+.formcontacto__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.formcontacto__title{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: .5rem;
+}
+.formcontacto__subtext{
+    font-weight: 100;
+    font-size: 1rem;
+    margin-bottom: .5rem;
+}
+.formcontacto__form{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.formcontacto__field{
+    position: relative;
+    margin-bottom: .5rem;
+}
+.formcontacto__input{
+    background: #FDFDFD;
+    width: 98.5%;
+    position: relative;
+    padding: 1.1rem 0 1rem .5rem;
+    border: none;
+    border-radius: 5px;
+    border-bottom: 2px solid var(--cor-gris-fondo);
+    caret-color: var(--cor-azul-btn);
+    font-family: 'Raleway';
+    margin-bottom: .5rem;
+}
+.formcontacto__input::placeholder, .formcontacto__textarea::placeholder{
+    opacity: 0;
+}
+.formcontacto__input__label, .formcontacto__textarea__label{
+    background: #FDFDFD;
+    width: 97.55%;
+    font-size: .9rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 1.1rem 0 1rem .5rem;
+    border-radius: 5px 0 0 5px;
+    cursor: text;
+}
+.formcontacto__input:focus-visible, .formcontacto__textarea:focus-visible{
+    outline: none;
+    border-bottom: 2px solid var(--cor-azul-btn);
+}
+.formcontacto__input:not(:placeholder-shown) + .formcontacto__input__label, .formcontacto__textarea:not(:placeholder-shown) + .formcontacto__textarea__label{
+    font-size: .7rem;
+    padding: .2rem 0 .2rem .5rem;
+}
+.formcontacto__input:focus-visible + .formcontacto__input__label, .formcontacto__textarea:focus-visible + .formcontacto__textarea__label{
+    color: var(--cor-azul-btn);
+    font-size: .7rem;
+    padding: .2rem 0 .2rem .5rem;
+}
+.formcontacto__input + .formcontacto__input__label, .formcontacto__textarea + .formcontacto__textarea__label{
+    transition: all 150ms ease-in-out;
+}
+.formcontacto__input:-webkit-autofill{
+    -webkit-box-shadow: 0 0 0px 1000px #FDFDFD inset;
+}
+.formcontacto__textarea{
+    background: #FDFDFD;
+    width: 98.5%;
+    padding: 1.1rem 0 1rem .5rem;
+    border: none;
+    border-radius: 5px;
+    border-bottom: 2px solid var(--cor-gris-fondo);
+    caret-color: var(--cor-azul-btn);
+    resize: none;
+    font-family: 'Raleway';
+}
+.formcontacto__invalid{
+    border-color: red;
+    transition: all 300ms ease-in;
+}
+.formcontacto__label__invalid{
+    color: red;
+    transition: all 300ms ease-in;
+}
+.hide{
+    display: none;
+    padding: 1rem;
+}
+.error{
+    color: red;
+    font-weight: bold;
+}
+.formcontacto__boton{
+    width: fit-content;
+    color: #FDFDFD;
+    background: var(--cor-azul-btn);
+    border: none;
+    padding: 1rem;
+    align-self: center;
+    transition: all 200ms ease-in;
+}
+.formcontacto__boton:hover{
+    cursor: pointer;
+    background: #5595E9;
+}

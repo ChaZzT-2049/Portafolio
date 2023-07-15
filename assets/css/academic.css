@@ -1,0 +1,42 @@
+/* Experiencia Académica*/
+section.academic{
+    background: var(--cor-azul-fondo);
+    padding: 3rem 7rem;
+}
+.academic__title{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.academic__courses{
+    display: flex;
+    justify-content: space-between;
+}
+.academic__courses__box{
+    flex-basis: 32.5%;
+}
+.academic__courses__item__cover{
+    background: #FDFDFD;
+    min-height: 160px;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+.academic__courses__item__img{
+    width: 80%;
+}
+.academic__courses__item__title{
+    font-size: 1.2rem;
+    margin-bottom: .5rem;
+    text-align: center;
+}
+.academic__courses__item__entity{
+    font-style: italic;
+    margin-bottom: .5rem;
+}
+.academic__courses__item__date{
+    font-weight: 600;
+}

@@ -1,0 +1,93 @@
+/* experiencia*/
+section.experience{
+    margin: 0 7rem;
+}
+.experience__section__title{
+    text-align: center;
+    font-size: 2rem;
+    margin: 2rem 0 1rem 0
+}
+.experience__box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+.experience__cover{
+    background: #FDFDFD;
+    flex-basis: 60%;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.experience__img{
+    width: 80%;
+}
+.experience__info{
+    flex-basis: 40%;
+    padding: 0 1rem;
+}
+.experience__description{
+    margin-bottom: 1rem;
+}
+.experience__title{
+    margin-bottom: 1rem;
+}
+.experience__text{
+    margin-bottom: 1rem;
+}
+.experience__repo{
+    margin-right: 1.5rem;
+}
+.experience__boton--repo{
+    color: var(--cor-azul-btn);
+    padding: 1rem;
+    background: var(--cor-de-fondo-blanco);
+    border: 2px solid var(--cor-azul-btn);
+    border-radius: 5px;
+}
+.experience__boton--repo:hover{
+    background: var(--cor-azul-btn-outline);
+    transition: all 200ms ease-in-out;
+    cursor: pointer;
+}
+.experience__boton--demo{
+    color: var(--cor-de-fondo-blanco);
+    padding: 1rem;
+    background: var(--cor-azul-btn);
+    border: 2px solid var(--cor-azul-btn);
+    border-radius: 5px;
+}
+.experience__boton--demo:hover{
+    background: #5595E9;
+    transition: all 200ms ease-in-out;
+    cursor: pointer;
+}
+.experience__mas{
+    background: none;
+    color: var(--cor-azul-btn);
+    font-weight: bold;
+    padding: .5rem;
+    border: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    transition: all 400ms ease;
+}
+.experience__mas:hover{
+    cursor: pointer;
+    background: var(--cor-azul-btn-outline);
+}
+.experience__skills{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.experience__skills__list{
+    display: flex;
+    align-items: center;
+}
+.experience__skills__list__item{
+    display: flex;
+    align-items: center;
+}
