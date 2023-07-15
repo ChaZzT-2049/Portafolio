@@ -35,6 +35,4 @@ section.about{
 }
 .about__info__firma{
     max-width: 200px;
-    transform: rotate(-90deg);
-    mix-blend-mode: multiply;
 }
